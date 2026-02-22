@@ -5,7 +5,7 @@ import heroImg from "@/assets/hero-wedding-car.jpg";
 import weddingImg from "@/assets/wedding-car-decorated.jpg";
 import airportImg from "@/assets/airport-transfer.jpg";
 import corporateImg from "@/assets/corporate-car.jpg";
-import tempoImg from "@/assets/tempo-traveller.jpg";
+import tempoImg from "@/assets/van-1-2-5.webp";
 import heroImg3 from "@/assets/BMW 5.webp";
 import heroImg4  from "@/assets/Defender.webp";
 import heroImg5 from "@/assets/Range-Rover-Sport-1.avif";
@@ -14,6 +14,8 @@ import heroImg7 from "@/assets/Thar_Earth_Edition.avif";
 import heroImg8 from "@/assets/toyota-fortuner-front-angle-low-view-609840.avif";
 import heroImg9 from "@/assets/toyota-innova-crysta-front-left-side-exterior.webp";
 import heroImg10 from "@/assets/used-convertible-cars-in-india.jpg";
+import heroImg11 from "@/assets/pfa-classic-white-vintage-car-pictures-on-rent.jpeg";
+import heroImg12 from "@/assets/volvo-9600-big@2x.jpg";
 
 const galleryItems = [
   { src: heroImg, title: "Wedding Mercedes S-Class", category: "Wedding" },
@@ -22,13 +24,15 @@ const galleryItems = [
   { src: corporateImg, title: "Corporate Audi A6", category: "Corporate" },
   { src: tempoImg, title: "Tempo Traveller Urbania", category: "Group Travel" },
   { src: heroImg3, title: "BMW", category: "Trip" },
-  { src: heroImg4, title: "Defender", category: "Offroading" },
+  { src: heroImg4, title: "Defender", category: "Off-Roading" },
   { src: heroImg5, title: "Range Rover", category: "Wedding" },
   { src: heroImg6, title: "Jaguar", category: "Wedding" },
-  { src: heroImg7, title: "Thar", category: "Wedding" },
+  { src: heroImg7, title: "Thar", category: "Off-Roading" },
   { src: heroImg8, title: "Fortuner", category: "Wedding" },
   { src: heroImg9, title: "Crysta", category: "Wedding" },
   { src: heroImg10, title: "Convertible", category: "Wedding" },
+  { src: heroImg11, title: "Vintage", category: "Wedding" },
+  { src: heroImg12, title: "Bus", category: "Lounge" },
 ];
 
 const Gallery = () => {

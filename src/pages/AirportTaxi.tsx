@@ -4,6 +4,11 @@ import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Phone, Plane, Clock, CheckCircle, MessageCircle, Shield, Zap } from "lucide-react";
 import airportImg from "@/assets/airport-transfer.jpg";
+import heroImg from "@/assets/mercedes-benz-mayback-s-class-front-angle-low-view-582368.avif";
+import Swift from "@/assets/dzireBlack.avif";
+import HondaCity from "@/assets/hondacity.jpg";
+import innova from "@/assets/Innova-Crysta.webp";
+
 
 const features = [
   { icon: Plane, title: "Flight Tracking", desc: "We monitor your flight status to adjust pickup times accordingly" },
@@ -14,10 +19,10 @@ const features = [
 ];
 
 const carOptions = [
-  { name: "Sedan (Swift Dzire / Etios)", capacity: "3 Passengers"  },
-  { name: "Premium Sedan (Honda City / Ciaz)", capacity: "3 Passengers"  },
-  { name: "Luxury Sedan (Mercedes / BMW)", capacity: "3 Passengers" },
-  { name: "SUV (Innova / Innova Crysta)", capacity: "6 Passengers"   },
+  { name: "Sedan (Swift Dzire / Etios)", capacity: "3 Passengers", carImg : Swift},
+  { name: "Premium Sedan (Honda City / Ciaz)", capacity: "3 Passengers", carImg :HondaCity},
+  { name: "Luxury Sedan (Mercedes / BMW)", capacity: "3 Passengers", carImg : heroImg },
+  { name: "SUV (Innova / Innova Crysta)", capacity: "6 Passengers", carImg : innova },
 ];
 
 const AirportTaxi = () => {
@@ -42,7 +47,7 @@ const AirportTaxi = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-muted-foreground font-accent"
+            className="text-lg font-semibold font-accent"
           >
             Ahmedabad Airport Pickup & Drop — Always On Time
           </motion.p>
@@ -74,7 +79,7 @@ const AirportTaxi = () => {
 
       {/* Car Options */}
       <section className="section-padding bg-secondary">
-        <SectionHeading title="Airport Transfer Rates" subtitle="Choose the perfect vehicle for your airport transfer" />
+        <SectionHeading title="Airport Transfer Cabs" subtitle="Choose the perfect vehicle for your airport transfer" />
         <div className="container mx-auto max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-6">
           {carOptions.map((car, i) => (
             <motion.div
@@ -85,7 +90,10 @@ const AirportTaxi = () => {
               transition={{ delay: i * 0.1 }}
               className="glass-card p-6"
             >
-              <h4 className="font-heading text-lg font-semibold mb-2">{car.name}</h4>
+              <div className="imgDiv">
+                <img src={car.carImg} alt="Airport taxi service Ahmedabad" className="w-full h-full object-cover" />
+              </div>
+              <h4 className="font-heading text-lg font-semibold my-2">{car.name}</h4>
               <p className="text-muted-foreground text-sm mb-1">{car.capacity}</p>
               {/* <p className="text-primary font-bold text-lg">{car.price}</p> */}
             </motion.div>

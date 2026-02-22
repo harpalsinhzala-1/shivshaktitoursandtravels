@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Wedding Cars", path: "/wedding-cars" },
   { label: "Airport Taxi", path: "/airport-taxi" },
   { label: "Book Helicopter", path: "/book-helicopter" },
+  { label: "Customise Tour Package", path: "/customise-package" },
   { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
 ];
@@ -19,9 +20,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
+      <div className="container mx-auto flex items-center justify-between h-16 md:h-24 px-4 ">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Shiv Shakti Tours & Travels" className="h-16 md:h-16 w-auto" />
+          <img src={logo} alt="Shiv Shakti Tours & Travels" className="h-16 md:h-20 w-auto" />
           <div className="">
             <p className="text-xl font-heading font-bold text-primary leading-tight">Shiv Shakti</p>
             <p className="text-md text-muted-foreground leading-tight">Tours & Travels</p>

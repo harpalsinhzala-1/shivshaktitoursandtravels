@@ -73,7 +73,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg md:text-xl text-muted-foreground mb-8 font-accent"
+              className="text-lg md:text-xl mb-8 font-accent"
             >
               Arrive in Style with Shiv Shakti Tours & Travels
             </motion.p>
