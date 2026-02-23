@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 import Layout from "@/components/Layout";
 import { Phone, Clock, Shield, Car, Star, Users, Sparkles, MapPin, CheckCircle } from "lucide-react";
-import heroImg from "@/assets/hero-wedding-car.jpg";
+import heroImg from "@/assets/Sunny.jpeg";
 import weddingImg from "@/assets/wedding-car-decorated.jpg";
 import airportImg from "@/assets/airport-transfer.jpg";
 import corporateImg from "@/assets/corporate-car.jpg";
