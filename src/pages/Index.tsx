@@ -10,6 +10,7 @@ import airportImg from "@/assets/airport-transfer.jpg";
 import corporateImg from "@/assets/corporate-car.jpg";
 import tempoImg from "@/assets/van-1-2-5.webp";
 
+
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
